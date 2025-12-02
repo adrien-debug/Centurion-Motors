@@ -21,7 +21,7 @@ export default function Sidebar() {
       {/* Logo Section */}
       <div className="p-6 border-b border-gray-800">
         <div className="flex items-center justify-center">
-          <div className="w-40 h-40 relative">
+          <div className="w-56 h-56 relative">
             <Image
               src="/LOGO CENTURION MOTORS_FOND BLANC_VDEF.png"
               alt="Centurion Motors"

@@ -56,7 +56,7 @@ export default function Login() {
       <div className="w-full max-w-md">
         <div className="card">
           <div className="flex flex-col items-center mb-8">
-            <div className="w-24 h-24 relative mb-4">
+            <div className="w-40 h-40 relative mb-4">
               <Image
                 src="/LOGO CENTURION MOTORS_FOND BLANC_VDEF.png"
                 alt="Centurion Motors"
