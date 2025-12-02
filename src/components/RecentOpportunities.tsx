@@ -10,17 +10,19 @@ export default function RecentOpportunities() {
   return (
     <div className="card">
       <h2 className="section-title">Opportunités Récentes</h2>
-      <div className="space-y-4">
+      <div className="space-y-2.5">
         {opportunities.map((opp, idx) => (
-          <div key={idx} className="flex items-center justify-between p-4 bg-green-50 rounded-lg border border-green-200">
+          <div key={idx} className="flex items-center justify-between p-3 bg-gradient-to-r from-silver-500/10 to-silver-600/5 rounded-lg border border-silver-500/30 hover:border-silver-500/50 transition-all duration-300">
             <div className="flex items-center space-x-3">
-              <AlertCircle className="text-green-600" size={20} />
+              <div className="p-1.5 bg-silver-500/20 rounded border border-silver-500/30">
+                <AlertCircle className="text-silver-400" size={16} />
+              </div>
               <div>
-                <p className="font-semibold text-gray-900">{opp.model}</p>
-                <p className="text-sm text-gray-600">€{opp.price.toLocaleString()}</p>
+                <p className="font-semibold text-white text-sm">{opp.model}</p>
+                <p className="text-xs text-gray-400">€{opp.price.toLocaleString()}</p>
               </div>
             </div>
-            <span className="px-3 py-1 bg-green-600 text-white rounded-full text-sm font-medium">
+            <span className="px-3 py-1 bg-gradient-to-r from-silver-500 to-silver-600 text-black rounded-full text-xs font-bold">
               {opp.discount}%
             </span>
           </div>

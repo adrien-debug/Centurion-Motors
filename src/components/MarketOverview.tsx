@@ -9,18 +9,18 @@ export default function MarketOverview() {
   return (
     <div className="card">
       <h2 className="section-title">Vue d'Ensemble du Marché</h2>
-      <div className="space-y-4">
+      <div className="space-y-2">
         {brands.map((brand, idx) => (
-          <div key={idx} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+          <div key={idx} className="flex items-center justify-between p-3 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-silver-500/30 transition-all duration-300">
             <div>
-              <p className="font-semibold text-gray-900">{brand.name}</p>
-              <p className="text-sm text-gray-600">{brand.count} véhicules</p>
+              <p className="font-semibold text-white text-sm mb-0.5">{brand.name}</p>
+              <p className="text-xs text-gray-400">{brand.count} véhicules</p>
             </div>
             <div className="text-right">
-              <p className="font-semibold text-gray-900">
+              <p className="font-bold text-silver-400 text-base">
                 €{brand.avgPrice.toLocaleString()}
               </p>
-              <p className="text-sm text-gray-600">Prix moyen</p>
+              <p className="text-xs text-gray-500 uppercase tracking-wider">Prix moyen</p>
             </div>
           </div>
         ))}

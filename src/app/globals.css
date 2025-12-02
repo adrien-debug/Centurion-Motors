@@ -4,41 +4,53 @@
 
 @layer base {
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-black text-gray-100;
   }
 }
 
 @layer components {
   .page-container {
-    @apply max-w-7xl mx-auto px-6 py-8;
+    @apply max-w-7xl mx-auto px-6 py-6;
   }
   
   .page-title {
-    @apply text-4xl font-bold text-gray-900 mb-2;
+    @apply text-3xl font-bold text-white mb-2 tracking-tight;
   }
   
   .page-subtitle {
-    @apply text-xl text-gray-600 mb-8;
+    @apply text-sm text-gray-400 mb-6 font-normal;
   }
   
   .section-title {
-    @apply text-2xl font-semibold text-gray-800 mb-6;
+    @apply text-lg font-semibold text-white mb-4 tracking-tight;
   }
   
   .card {
-    @apply bg-white rounded-lg shadow-md p-6;
+    @apply bg-gray-900 rounded-lg shadow-lg p-5 border border-gray-800;
   }
   
   .btn-primary {
-    @apply bg-primary-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-primary-700 transition-colors;
+    @apply bg-gradient-to-r from-silver-400 to-silver-600 text-black px-5 py-2.5 rounded-lg text-sm font-semibold hover:from-silver-300 hover:to-silver-500 transition-all duration-300 shadow-md hover:shadow-lg;
   }
   
   .btn-secondary {
-    @apply bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-300 transition-colors;
+    @apply bg-gray-800 text-silver-300 border border-silver-600 px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-gray-700 hover:border-silver-400 transition-all duration-300;
   }
   
   .input-field {
-    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent;
+    @apply w-full px-4 py-2.5 bg-gray-900 border border-gray-700 rounded-lg text-sm text-white placeholder-gray-500 focus:ring-2 focus:ring-silver-500 focus:border-silver-500 transition-all;
+  }
+  
+  .sidebar-item {
+    @apply flex items-center space-x-3 px-4 py-2.5 rounded-lg transition-all duration-300 font-medium text-sm;
+  }
+  
+  .sidebar-item-active {
+    @apply bg-gradient-to-r from-silver-500/20 to-silver-600/10 text-silver-300 border-l-4 border-silver-500;
+  }
+  
+  .sidebar-item-inactive {
+    @apply text-gray-400 hover:bg-gray-800 hover:text-silver-200;
   }
 }
 
